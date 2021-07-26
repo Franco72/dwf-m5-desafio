@@ -1,0 +1,58 @@
+/* Estilos que va a tener siempre (sin contar los media queries) la clase .home */
+.home {
+  height: 100vh;
+  background-image: url("../../img/background.webp");
+}
+/* Estilos que va a tener antes de que el height de la pantalla sea de 568px */
+@media (max-height: 568px) {
+  .home {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+/* Estilos que va a tener después de que el height de la pantalla sea de 812px */
+@media (min-height: 812px) {
+  .home {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Estilos que va a tener siempre (sin contar los media queries) la clase .home-content */
+.home-content {
+  margin: 0 auto;
+  max-width: 336px;
+  padding: 110px 0 0 0;
+  display: grid;
+  gap: 74px;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .home-content {
+    gap: 41px;
+  }
+}
+/* Estilos que va a tener cuando el height de la pantalla sea menor a 568px */
+@media (max-height: 568px) {
+  .home-content {
+    padding: 20px 10px 0 10px;
+    gap: 40px;
+  }
+}
+/* Estilos que va a tener cuando el height de la pantalla sea mayor a 812px */
+@media (min-height: 812px) {
+  .home-content {
+    padding: 0;
+  }
+}
+.home__title {
+  font-family: "Lora", serif;
+  color: #009048;
+  margin-left: 33px;
+}
+.home__btn {
+  font-family: "Odibee Sans", cursive;
+}
+.home-hands-container {
+  position: fixed;
+  bottom: -1%;
+}

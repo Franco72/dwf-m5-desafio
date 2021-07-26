@@ -1,0 +1,59 @@
+/* Estilos que va a tener siempre (sin contar los media queries) la clase .instructions */
+.instructions {
+  height: 100vh;
+  background-image: url("../../img/background.webp");
+}
+/* Estilos que va a tener antes de que el height de la pantalla sea de 568px */
+@media (max-height: 568px) {
+  .instructions {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+/* Estilos que va a tener después de que el height de la pantalla sea de 812px */
+@media (min-height: 812px) {
+  .instructions {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Estilos que va a tener siempre (sin contar los media queries) la clase .instructions-content */
+.instructions-content {
+  margin: 0 auto;
+  max-width: 336px;
+  padding: 110px 5px 5px 0;
+  display: grid;
+  gap: 45px;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .instructions-content {
+    gap: 48px;
+  }
+}
+/* Estilos que va a tener cuando el height de la pantalla sea menor a 568px */
+@media (max-height: 568px) {
+  .instructions-content {
+    padding: 40px 10px 0 10px;
+    gap: 40px;
+  }
+}
+/* Estilos que va a tener cuando el height de la pantalla sea mayor a 812px */
+@media (min-height: 812px) {
+  .instructions-content {
+    padding: 0;
+  }
+}
+.instructions__title {
+  font-family: "Lora", serif;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.instructions__btn {
+  font-family: "Odibee Sans", cursive;
+}
+.ins-hands-container {
+  position: fixed;
+  bottom: -1%;
+}

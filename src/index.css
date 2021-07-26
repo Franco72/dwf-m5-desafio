@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --btn-blue-color: #006cfc;
+  --btn-blue-color-focus: #001997;
+}

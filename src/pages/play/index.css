@@ -1,0 +1,74 @@
+.play {
+  height: 100vh;
+  background-image: url("../../img/background.webp");
+}
+.play-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  border: 23px solid rgba(0, 0, 0, 1);
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  border-left-color: transparent;
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.spinner__text {
+  position: fixed;
+  font-size: 100px;
+}
+.hands-container {
+  position: fixed;
+  bottom: -3%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  /* gap: 46.71px; */
+  gap: 10.71px; /*! acá */
+}
+@media (min-width: 569px) {
+  .hands-container {
+    gap: 65px;
+  }
+}
+.set-opacity {
+  opacity: 0.5;
+}
+.shrink-icon {
+  position: relative;
+  bottom: -13%;
+}
+.move-player-container {
+  position: fixed;
+  bottom: -1%;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+}
+.move-machine-container {
+  position: fixed;
+  top: -1%;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.set-font-family {
+  font-family: "Odibee Sans", cursive;
+}
