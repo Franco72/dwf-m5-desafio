@@ -1,0 +1,1 @@
+{"mappings":"AAAA,EACA,qBACA,CACA,KACA,QAAA,CACA,6BACA,CACA,MACA,wBAAA,CACA,8BACA","sources":["src/index.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: \"Roboto\", sans-serif;\n}\n:root {\n  --btn-blue-color: #006cfc;\n  --btn-blue-color-focus: #001997;\n}\n"],"names":[],"version":3,"file":"index.f20efd22.css.map"}
