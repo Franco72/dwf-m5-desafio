@@ -9,8 +9,10 @@ export const state = {
   },
   listeners: [],
   init() {
-    const stateSaved = localStorage.getItem("state");
-    this.setState(JSON.parse(stateSaved));
+    const stateSaved = localStorage.getItem("state-saved-game");
+    if (JSON.parse(stateSaved) != null) {
+      this.setState(JSON.parse(stateSaved));
+    }
   },
   getState() {
     return this.data;
@@ -20,7 +22,7 @@ export const state = {
     for (const cb of this.listeners) {
       cb();
     }
-    localStorage.setItem("state", JSON.stringify(newState));
+    localStorage.setItem("state-saved-game", JSON.stringify(newState));
   },
   subscribe(cb: () => any) {
     this.listeners.push(cb);

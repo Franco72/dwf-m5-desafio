@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir build"
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /dwf-m5-desafio",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gh-pages": "^3.2.3"
